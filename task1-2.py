@@ -12,26 +12,22 @@
 Прошу вас внимательно читать ТЗ и не забыть выполнить все пункты.
 """
 # O(n^2) - квадратичная
-def find_min_1(list):
-    m = list[0]
-    for i in list:
-        for j in list:
+def find_min_1(l):
+    m = l[0]
+    for i in l:
+        for j in l:
             if i > j:
                 if m > j:
                     m = j
     return m
 # O(n) - линейная
-def find_min_2(list):
-    m = list[0]
-    for i in list:
+def find_min_2(l):
+    m = l[0]
+    for i in l:
         if m > i:
             m = i
     return m
-list = [99, 1, 2, 56, 40, 1000, -1]
-print(find_min_1(list))
-print(find_min_2(list))
+a = [99, 1, 2, 56, 40, 1000, -1]
+print(find_min_1(a))
+print(find_min_2(a))
 
-"""
-PyCharm начал ругаться на list[i] и list[j], пишет IndexError: list index out of range
-я не знаю почему, но понимать он стал только i и j
-"""

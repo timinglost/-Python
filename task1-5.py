@@ -20,7 +20,7 @@
 Прошу вас внимательно читать ТЗ и не забыть выполнить все пункты.
 Задание творческое. Здесь нет жестких требований к выполнению.
 """
-class stack_of_plates:
+class StackOfPlates:
     def __init__(self):
         self.elems = [[]]
         self.chek = 1
@@ -60,7 +60,7 @@ class stack_of_plates:
         for i in self.elems:
             num += (len(i))
         return f'{num} тарелок, {len(self.elems)} стопок'
-a = stack_of_plates()
+a = StackOfPlates()
 print(a.is_empty())
 i = 0
 while i < 23:

@@ -12,7 +12,7 @@
 Прошу вас внимательно читать ТЗ и не забыть выполнить все пункты.
 Задание творческое. Здесь нет жестких требований к выполнению.
 """
-class task_board:
+class TaskBoard:
     def __init__(self):
         self.basic = [] # базовая
         self.resolved = [] # решенная
@@ -41,7 +41,7 @@ class task_board:
 
     def size(self):
         return f'basic: {len(self.basic)}, resolved: {len(self.resolved)}, revision: {len(self.revision)}'
-a = task_board()
+a = TaskBoard()
 print(a.is_empty())
 i = 0
 while i < 40:
